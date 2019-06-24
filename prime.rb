@@ -4,8 +4,6 @@ def prime?(integer)
     if n % i == 0
       true
     end
-  end
-    return true
   else 
     return false
   end
