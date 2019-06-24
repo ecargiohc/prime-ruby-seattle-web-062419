@@ -1,11 +1,9 @@
 def prime?(integer)
-  # if integer.prime?
-    for integer in 2..integer-1
-    if integer %  == 0
-      false
-    
-  else 
-   true
-  end
-end
+    return false if integer < 2
+    (2..integer - 1).each do |x|
+        if (integer % x) == 0
+            return false
+        end
+    end
+    true
 end
