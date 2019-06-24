@@ -1,5 +1,6 @@
 def prime?(integer)
-  return false if integer < 2
+  if integer < 2
+    return false
     range = 2..integer - 1
       range.each do |n|
         if (integer % n) == 0
